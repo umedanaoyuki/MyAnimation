@@ -6,11 +6,10 @@
     background-color: pink;
     transition-property: transform;
     transition-duration: 1s;
-    transform-origin: top left;
 }
 
 .box:hover {
-    transform: rotate(45deg);
-
+    /*変形を組み合わせる場合はその順序がとても大切*/
+    transform: translateX(100px) rotate(45deg);
 }
 
