@@ -9,7 +9,7 @@
 }
 
 .box:hover {
-    transform: scale(.5);
+    transform: scaleY(.5);
 
 }
 
