@@ -1,33 +1,16 @@
 @charset "utf-8";
 
-.box {
-    width: 80px;
-    height: 80px;
-    background-color: pink;
-    /* animation-name: move-around;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: alternate; */
-    animation: move-around 4s infinite 1s alternate;
+button {
+    all: unset;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background 300ms;
 }
 
-@keyframes move-around {
-    25% {
-        transform: translate(100px,0);
-        border-radius: 0;
-    }
-    50% {
-        transform: translate(100px,100px);
-        border-radius: 50%;
-    }
-    75% {
-        transform: translate(0px,100px);
-        border-radius: 0;
-    }
-    100% {
-        transform: translate(0px,200px);
-    }
+button:hover {
+    background-color: black;
+    color: white;
 }
-
-
