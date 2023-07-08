@@ -4,9 +4,12 @@
     width: 80px;
     height: 80px;
     background-color: pink;
-    animation-name: move-around;
+    /* animation-name: move-around;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate; */
+    animation: move-around 4s infinite 1s alternate;
 }
 
 @keyframes move-around {
@@ -22,9 +25,9 @@
         transform: translate(0px,100px);
         border-radius: 0;
     }
-    /* 100% {
-        transform: none;
-    } */
+    100% {
+        transform: translate(0px,200px);
+    }
 }
 
 
