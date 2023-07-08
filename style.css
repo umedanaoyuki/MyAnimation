@@ -4,11 +4,24 @@
     width: 80px;
     height: 80px;
     background-color: pink;
-    transition: transform 1s, border-radius 1s;
+    animation-name: move-around;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-.box:hover {
-    transform: translateX(100px);
-    border-radius: 50%;
+@keyframes move-around {
+    25% {
+        
+    }
+    50% {
+
+    }
+    75% {
+
+    }
+    100% {
+
+    }
 }
+
 
