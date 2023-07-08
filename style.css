@@ -1,16 +1,19 @@
 @charset "utf-8";
 
-button {
-    all: unset;
-    border: 2px solid black;
-    font-weight: bold;
-    border-radius: 4px;
-    padding: 4px 8px;
-    cursor: pointer;
-    transition: background 300ms;
+.loading {
+    width: 32px;
+    height: 32px;
+    border-top: 8px solid red;
+    border-right: 8px solid blue;
+    border-bottom: 8px solid green;
+    border-left: 8px solid yellow;
+    border-radius: 50%;
+    animation: spin 800ms infinite linear;
+    /* animation-timing-function: linear; */
 }
 
-button:hover {
-    background-color: black;
-    color: white;
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
