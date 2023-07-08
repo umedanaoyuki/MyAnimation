@@ -10,6 +10,7 @@
 
 .box:hover {
     /*変形を組み合わせる場合はその順序がとても大切*/
-    transform: translateX(100px) rotate(45deg);
+    transform: translateX(100px);
+    transition-delay: 1s;
 }
 
