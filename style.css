@@ -4,14 +4,11 @@
     width: 80px;
     height: 80px;
     background-color: pink;
-    transition-property: transform;
-    /* transition-duration: 2s;
-    transition-timing-function: linear; */
-    transition: all 2s linear 1s;
+    transition: transform 1s, border-radius 1s;
 }
 
 .box:hover {
-    /*変形を組み合わせる場合はその順序がとても大切*/
-    transform: translateX(400px);
+    transform: translateX(100px);
+    border-radius: 50%;
 }
 
