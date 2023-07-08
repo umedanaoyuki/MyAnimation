@@ -5,12 +5,12 @@
     height: 80px;
     background-color: pink;
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 }
 
 .box:hover {
     /*変形を組み合わせる場合はその順序がとても大切*/
-    transform: translateX(100px);
-    transition-delay: 1s;
+    transform: translateX(400px);
 }
 
